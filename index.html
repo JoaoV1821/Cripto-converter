@@ -12,19 +12,25 @@
 </head>
 <body>
     <header class="Cabecalho">
-        <h1><strong>Cripto Currency</strong></h1>
+        <h1><strong><a href="#">Cripto Currency</a></strong></h1>
         <nav class="Cabecalho-nav">
-            <p class="p-nav-cab"><strong>Home</strong></p>
-            <p class="p-nav-cab"><strong>Contato</strong></p>
-            <p class="p-nav-cab"><strong>Sobre</strong></p>
+            <p class="p-nav-cab"><strong><a class="link-nav" href="#">Home</a></strong></p>
+            <p class="p-nav-cab"><strong><a class= "link-nav" href="#">Contato</a></strong></p>
+            <p class="p-nav-cab"><strong><a class="link-nav" href="#">Sobre</a></strong></p>
         </nav>
     </header>
     <main>
         <div class="container">
             <fieldset>
-                <form action="">
-                    <label for="Converter-de">Converter de:</label>
-                    <select name="converter-de">
+                <form action="#">
+                    <div class="valor">
+                        <label for="valor">Valor</label>
+                        <input type="number" min="1" step="any">
+                    </div>
+                    <div class="converter">
+                        <label for="Converter-de">Converter de</label>
+                        <select name="converter-de">
+                    </div>
                         <option value="BTC">Bitcoin (BTC)</option>
                         <option value="ETH">Ethereum (ETH)</option>
                         <option value="USDT">Tether (USDT)</option>
@@ -36,8 +42,11 @@
                         <option value="LUNA">Terra (LUNA)</option>
                         <option value="DOT">Polkadot (DOT)</option>
                     </select>
-                    <label for="Para">Para</label>
-                    <select name="Para">
+
+                    <div class="para">
+                        <label for="Para">Para</label>
+                        <select name="Para">
+                    </div>
                         <option value="BTC">Bitcoin (BTC)</option>
                         <option value="ETH">Ethereum (ETH)</option>
                         <option value="USDT">Tether (USDT)</option>
