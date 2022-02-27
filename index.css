@@ -1,7 +1,9 @@
 body{
     margin: 0%;
     font-family: 'Nanum Myeongjo', serif;
+    background-color: #edf6fd;
 }
+
 main{
     display: flex;
     flex-direction: row;
@@ -10,6 +12,7 @@ main{
     width: 100%;
     height: 100%;
 }
+
 h1{
     margin-left: 40px;
     color: #cae9ff;
@@ -19,6 +22,7 @@ h1 :hover {
     font-size: 40px;
     transition: all 0.5s;
 }
+
 h1 :link, h1 :visited, h1 :hover, h1 :active{
     color: #cae9ff;
     text-decoration: none;
@@ -54,52 +58,67 @@ h1 :link, h1 :visited, h1 :hover, h1 :active{
     text-decoration: none;
 }
 
-.p-nav-cab:hover{
+.p-nav-cab:hover {
     font-size: 25px;
     transition: 0.5s;
 }
 
-.container{
+.container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    justify-content: left;
    
 }
 
-fieldset{
+fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     margin-left: 30px;
     margin-top: 10%;
-    width: 700px;
-    height: 250px;
+    width: 500px;
+    height: 350px;
     border-radius: 10px;
+    box-shadow: 0 0 15px #bbbbbb;
     font-size: 25px;
+    background-color: white;
+    padding: 5%;
 }
 
-select{
-    height: 20px;
-    width: 150px;
+select {
+    height: 30px;
+    width: 400px;
     border-radius: 10px;
-    
 
+}
+
+button {
+    margin-top: 40px;
+    margin-left: 125px;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
 }
 
 .valor, input{
-    height: 20px;
-    width: 150px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.valor, .para, .converter{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 30px;
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+.para, .converter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 45px;
 }
 
 
