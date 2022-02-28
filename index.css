@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0%;
     font-family: 'Nanum Myeongjo', serif;
     background-color: #edf6fd;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -13,7 +13,7 @@ main{
     height: 100%;
 }
 
-h1{
+h1 {
     margin-left: 40px;
     color: #cae9ff;
 }
@@ -23,12 +23,15 @@ h1 :hover {
     transition: all 0.5s;
 }
 
-h1 :link, h1 :visited, h1 :hover, h1 :active{
+h1 :link,
+h1 :visited,
+h1 :hover,
+h1 :active {
     color: #cae9ff;
     text-decoration: none;
 }
 
-.Cabecalho{
+.Cabecalho {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -39,8 +42,8 @@ h1 :link, h1 :visited, h1 :hover, h1 :active{
 
 }
 
-.Cabecalho-nav{
-    display: flex ;
+.Cabecalho-nav {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row;
@@ -52,8 +55,10 @@ h1 :link, h1 :visited, h1 :hover, h1 :active{
     font-family: 'Nanum Myeongjo', serif;
 }
 
-.link-nav:link, .link-nav:visited, .link-nav:hover, .link-nav:active
-{
+.link-nav:link,
+.link-nav:visited,
+.link-nav:hover,
+.link-nav:active {
     color: #000000;
     text-decoration: none;
 }
@@ -68,7 +73,7 @@ h1 :link, h1 :visited, h1 :hover, h1 :active{
     flex-direction: row;
     justify-content: space-between;
     justify-content: left;
-   
+
 }
 
 fieldset {
@@ -102,7 +107,8 @@ button {
     width: 150px;
 }
 
-.valor, input{
+.valor,
+input {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -114,7 +120,8 @@ button {
 }
 
 
-.para, .converter{
+.para,
+.converter {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -123,17 +130,47 @@ button {
 
 
 @media (max-width:700px) {
-    h1{
+    h1 {
         display: none;
     }
 
-    .Cabecalho{
+    .Cabecalho {
         height: auto;
     }
 
-    .Cabecalho-nav{
+    .Cabecalho-nav {
         flex-direction: column;
         align-items: center;
         height: auto;
+    }
+}
+
+@media (max-width:360px){
+    .valor, 
+    .converter, 
+    .para {
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    fieldset{
+        height: auto;
+        width: auto;
+        align-items: center;
+    }
+
+    select{
+        height: auto;
+        width: auto;
+    }
+
+    input{
+        height: auto;
+        width: auto;
+    }
+
+    button{
+        margin: auto;
     }
 }
